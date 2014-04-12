@@ -22,7 +22,7 @@ class Card:
   def __init__(self,suit,rank):
     self.suit = suit
     self.rank = rank
-    self.card = rank + auit
+    self.card = rank + suit
   # end def __init__
     
    # Method returns the class rank as a character
