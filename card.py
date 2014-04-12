@@ -28,7 +28,8 @@ class Card:
    # Method returns the class rank as a character
    # 2,3,4,5,6,7,8,9,0,J,Q,K,A
    #
-   # @param self  This is a default python class argument
+   # @param  self  This is a default python class argument
+   # @return rank  Returns the rank of the card
   def getRank(self):
     return self.rank
   # end def getRank
@@ -36,7 +37,8 @@ class Card:
    # Method returns the class suit as a character
    # C,H,D,S
    #
-   # @param self  This is a default python class argument
+   # @param  self  This is a default python class argument
+   # @return suit  Returns the suit of the card
   def getSuit(self):
     return self.suit
   # end def getSuit
@@ -45,8 +47,10 @@ class Card:
    # the card as a string representation of its suit and
    # rank. (i.e. 3C,AH,0D,KS)
    #
-   # @param self  This is is a default python class argument
+   # @param  self  This is is a default python class argument
+   # @return card  Returns the card as a string
   def __str__(self):
     return self.card
   # end def __str__
+  
 # end class Card
