@@ -8,9 +8,6 @@
  # The Card class is used to represent a single playing card
  # from a deck of 52 or 54. The card has a suit and a rank.
 class Card:
-  self.card = ""
-  self.suit = ''
-  self.rank = ''
 
    # Class initializer method creates a new playing card with
    # a desired rank and suit provided through the creation
