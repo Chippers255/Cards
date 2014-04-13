@@ -12,11 +12,6 @@ from card import Card
  # capable of being shuffled and dealing one card at a
  # time.
 class Deck:
-  self.deck = []     # Actual deck representation
-  self.cardsUsed = 0 # Keeps track of the cards dealt
-  
-  self.suits = ['C','H','D','S']
-  self.ranks = ['2','3','4','5','6','7','8','9','0','J','Q','K','A']
   
    # Class initializer method creates a new unshuffled deck
    # of cards with all suits and ranks. This deck does not
@@ -24,6 +19,12 @@ class Deck:
    #
    # @param self  This is a default python class argument
   def __init__(self):
+    self.deck = []     # Actual deck representation
+    self.cardsUsed = 0 # Keeps track of the cards dealt
+  
+    self.suits = ['C','H','D','S']
+    self.ranks = ['2','3','4','5','6','7','8','9','0','J','Q','K','A']
+  
     for suit in self.suits:
       for rank in self.ranks:
         self.deck.append(card(suit,rank))
@@ -69,7 +70,10 @@ class Deck:
    # @param  self  This is is a default python class argument
    # @return deck  This returns the entire deck to be printed 
   def __str__(self):
-    return self.deck
+    tmpDeck = "Deck: "
+    for c in self.deck:
+      tmpDeck += str(c) + " "
+    return tmpDeck
   # end def __str__
     
 # end class Deck
