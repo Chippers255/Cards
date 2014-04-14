@@ -26,27 +26,27 @@ To create a standard 52 deck of cards unshuffled:
 	
 To put all cards back in the deck and shuffle:
   
-  >>> deck.shuffle() # shuffles the deck of cards
+  	>>> deck.shuffle() # shuffles the deck of cards
   
 To deal a single card from the deck:
 
-  >>> hand1.append(deck.dealCard()) # Deals a single card from the deck to a hand
+  	>>> hand1.append(deck.dealCard()) # Deals a single card from the deck to a hand
   
-  >>> kitty.append(deck.dealCard()) # Deals a single card to a throwaway pile
+  	>>> kitty.append(deck.dealCard()) # Deals a single card to a throwaway pile
   
 To print out a card:
 
-  >>> print card # Prints the rank and suit of a single playing card
+  	>>> print card # Prints the rank and suit of a single playing card
   
-  >>> # The following prints out a hand of cards
-  >>> output = "Cards in hand: "
-  >>> for card in hand:
-  >>>   output += str(card) + " "
-  >>> print output
+  	>>> # The following prints out a hand of cards
+  	>>> output = "Cards in hand: "
+  	>>> for card in hand:
+  	>>>   output += str(card) + " "
+  	>>> print output
 
 To print out the entire deck:
 
-  >>> print deck # Prints out every card in the deck
+  	>>> print deck # Prints out every card in the deck
 	
 #Demos#
 
