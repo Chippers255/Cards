@@ -63,6 +63,26 @@ class Deck:
       return self.deck[self.cardsUsed - 1]
   # end def dealCard
   
+   # Method deals any numbers of cards from the deck and marks it 
+   # in the list of cards dealt. Returns an error if no cards are 
+   # left in the deck.
+   #
+   # @param  self     This is a default python class argument
+   # @param  num      This is the number of cards to deal
+   # @error  noCards  Throws/prints a no cards left error
+   # @return card     Returns/deals a card 
+  def dealCards(self, num):
+    if (self.cardsUsed + num) >= len(self.deck):
+      print "Error: There are not enough cards left in the deck."
+    else:
+      deal = []
+    
+      for i in range(num):
+        deal.append(self.deck[self.cardsUsed - 1])
+        
+      return deal
+  # end def dealCards
+
    # When print is called on a deck this method will return
    # the list of cards in the deck as a string representation
    # of each cards suit and rank.
