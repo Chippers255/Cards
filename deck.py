@@ -5,6 +5,7 @@
 # This class was developed for public use as part of the 
 # Cards package.
 
+import random
 from card import Card
 
  # The Deck class is used to represent a deck of playing
